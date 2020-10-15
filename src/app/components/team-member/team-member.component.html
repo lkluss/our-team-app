@@ -1,0 +1,25 @@
+<div class="row flex-content-center">
+  <div class="col-auto">
+    <img src="{{ teamMember.imageUrl.w400 }}" class="image-fit">
+  </div>
+</div>
+<div class="row flex-content-center py-4">
+  <div class="col-auto details-box">
+    <div class="row">
+      <div class="col-12">
+        <strong class="text-primary">{{teamMember.block.title}}</strong>
+      </div>
+      <div class="col-12">
+        {{teamMember.block.description}}
+      </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col-12 member-link">
+        <span class="text-primary">{{teamMember.block.link}}</span>
+      </div>
+      <div class="col-12">
+        {{teamMember.block.text}}
+      </div>
+    </div>
+  </div>
+</div>
