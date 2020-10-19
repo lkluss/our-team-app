@@ -1,4 +1,4 @@
-import { MemberCard } from './../../models/MemberCard';
+import { MemberCardModel } from './../../models/MemberCardModel';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TeamMemberComponent implements OnInit {
 
-  @Input() teamMember: MemberCard;
+  @Input() teamMember: MemberCardModel;
   
   constructor() { }
 

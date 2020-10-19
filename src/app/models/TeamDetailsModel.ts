@@ -1,9 +1,10 @@
-import { TeamAttributes } from './TeamAttributes';
+import { TeamAttributesModel } from './TeamAttributesModel';
 
-export class TeamDetails {
+
+export class TeamDetailsModel {
     id: string;
     type: string;
-    attributes: TeamAttributes;
+    attributes: TeamAttributesModel;
 
     constructor(id:string, type: string){
         this.id = id;

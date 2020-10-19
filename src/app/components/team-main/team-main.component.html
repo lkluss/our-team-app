@@ -1,5 +1,5 @@
 <div class="container-flex main-component">
-  <div class="row" *ngFor="let team of (teams$ | async)">
+  <div class="row pb-5" *ngFor="let team of (teams$ | async)">
     <div class="col-12">
       <app-team-profile [teamId]="team.id"></app-team-profile>
     </div>

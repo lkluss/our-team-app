@@ -1,5 +1,4 @@
-import { MemberCard } from './../../models/MemberCard';
-import { TeamDetails } from './../../models/TeamDetails';
+import { MemberCardModel } from './../../models/MemberCardModel';
 import { TeamProfileService } from './../../services/team-profile.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -15,7 +14,7 @@ export class TeamProfileComponent implements OnInit {
   @Input() teamId: number;
 
   public teamName$: Observable<any>;  
-  public memberCards$: Observable<Array<MemberCard>>;
+  public memberCards$: Observable<Array<MemberCardModel>>;
 
   constructor(private teamProfileService: TeamProfileService) { }
 
